@@ -1,0 +1,150 @@
+*{
+    text-align: center;
+    padding:0;
+    margin: 0;
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(228, 226, 226);
+    color:rgb(214, 237, 231)
+}
+.head{
+    text-align: center;
+    padding:2rem;
+    max-width: 800px;
+    width: 100%;
+    margin:2rem auto;
+    border-radius:5rem ;
+    background-image: linear-gradient(to right,rgb(255, 249, 72),rgb(220, 20, 20));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    font-family:Alkatra,sans-serif;
+    
+}
+#input{
+    
+    padding:0.5rem;
+    margin-right: 1rem;
+    border: none;
+    font-family: cursive;
+    font-size:1.15rem;
+    color:rgb(38, 38, 38);
+    background-color:darkgray ;
+    box-shadow: 3px 3px 3px black;
+    border-radius: 100px;
+    width:500px;
+    height: 40px;
+}
+#addBtn{
+    cursor: pointer;
+    border:none;
+    margin:1rem;
+    background-image: linear-gradient(rgb(255, 153, 0),rgb(231, 86, 86));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Alkatra;
+    font-size: larger;
+    width:80px;
+    height: 60px;
+    border-radius: 2rem;
+}
+h2{
+    text-align: center;
+    padding:2rem;
+    max-width: 800px;
+    width: 100%;
+    margin:2rem auto;
+    
+    border-radius:5rem ;
+    background-image: linear-gradient(to right,rgb(255, 249, 72),rgb(220, 20, 20));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    font-family:Alkatra,sans-serif;
+    
+}
+#output{
+    
+    display:block;
+    margin-bottom:3rem;
+   
+}
+.div-style{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:40%;
+    height: 30px;
+    margin-top:0.9rem;
+    margin-left: 31.1%;
+
+}
+
+#task{
+    overflow:hidden;
+    width:100%;
+    margin-right:2rem;
+    padding:0.5rem;
+    border:none;
+    color:rgb(34, 32, 32);
+    margin-bottom:1rem;
+    font-size: xx-large;
+    font-family:Alkatra,sans-serif;
+
+}
+#done{
+    cursor: pointer;
+    background-image: linear-gradient(to right,rgb(102, 255, 0),green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border:none;
+    height:60px;
+    width:80px;
+    font-size: larger;
+    font-family:Alkatra,sans-serif;
+    color:aliceblue;
+    text-transform: uppercase;
+    margin-right: 0.5rem;
+    padding:0.5rem;
+}
+#delete{
+    cursor: pointer;
+   margin-left: -0.2rem;
+    background-image: linear-gradient(to right,rgb(212, 58, 58),rgb(255, 16, 16));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: none;
+    height:60px;
+    width:80px;
+    font-size: larger;
+    font-family:Alkatra,sans-serif;
+    color:aliceblue;
+    text-transform: uppercase;
+    padding:0.5rem;
+}
+.strikethrough{
+    position: relative;
+
+}
+.strikethrough::after{
+    content: '';
+    position: absolute;
+    top:1.6rem;
+    left:0;
+    height:4px;
+    animation:strike 1s linear forwards;
+    background:black;
+}
+@keyframes strike {
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+    
+}
