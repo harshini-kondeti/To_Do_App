@@ -5,7 +5,7 @@ addbutton.addEventListener('click',()=>{
     if(input.value==''){
       window.alert("PLEASE ENTER THE TASK");
     }
-    
+    else {
     const outtask= document.createElement('div');
     outtask.classList.add('div-style');
     output.appendChild(outtask);
@@ -35,6 +35,6 @@ addbutton.addEventListener('click',()=>{
         parent.parentElement.removeChild(parent);
 
     });
-
+    }
     input.value="";
 });
